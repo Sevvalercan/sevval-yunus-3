@@ -1,15 +1,13 @@
-import React from 'react'
+import React from 'react';
 
-
-export default function Footer() {
+const Footer = () => {
   return (
-    
-          <footer style={{ backgroundColor: '#000', color: '#fff', padding: '20px', marginTop: '70px' }}>
-            <div className="container text-center">
-              <span>&copy; 2024 My Website. All Rights Reserved.</span>
-            </div>
-          </footer>
-       
-      
+    <footer className="bg-dark text-light py-4  bottom-0 w-100">
+      <div className="container text-center">
+        <p>&copy; 2024 My Website. All Rights Reserved.</p>
+      </div>
+    </footer>
   );
 }
+
+export default Footer;

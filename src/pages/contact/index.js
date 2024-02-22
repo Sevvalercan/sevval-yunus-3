@@ -1,29 +1,23 @@
-import React from 'react';
-import Button from 'react-bootstrap/Button';
-import Col from 'react-bootstrap/Col';
-import Form from 'react-bootstrap/Form';
-import Row from 'react-bootstrap/Row';
-import Footer from '../../../component/footer/Footer';
-import Nbar from '../../../component/navbar/Nbar';
-
+import React from "react";
+import Button from "react-bootstrap/Button";
+import Col from "react-bootstrap/Col";
+import Form from "react-bootstrap/Form";
+import Row from "react-bootstrap/Row";
+import Layout from "../../../component/layout/Layout";
 export default function MyHome() {
   return (
-    <>
-    <Nbar />
-    
-    <div className="d-flex justify-content-center align-items-center" style={{ height: "100vh" }}> 
+    <div
+      className="d-flex justify-content-center align-items-center"
+      style={{ height: "100vh" }}
+    >
       <GridComplexExample />
-     
-     
     </div>
-    <Footer />
-    </>
   );
 }
 
 function GridComplexExample() {
   return (
-    <Form  className="mb-2 my-component" style={{ maxWidth: "400px" }}>
+    <Form className="mb-2 my-component" style={{ maxWidth: "400px" }}>
       <Row className="mb-2">
         <Form.Group as={Col} controlId="formGridEmail">
           <Form.Label>E-posta</Form.Label>
@@ -40,7 +34,6 @@ function GridComplexExample() {
         <Form.Label>Adres</Form.Label>
         <Form.Control placeholder="" />
       </Form.Group>
-
 
       <Row className="mb-3">
         <Form.Group as={Col} controlId="formGridCity">
@@ -67,12 +60,10 @@ function GridComplexExample() {
       </Form.Group>
 
       <div className="d-flex justify-content-center">
-      <Button variant="primary" type="submit">
-        Kaydet
-      </Button>
+        <Button variant="primary" type="submit">
+          Kaydet
+        </Button>
       </div>
     </Form>
   );
 }
-
-

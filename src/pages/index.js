@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 const MyMenu = () => {
   return (
-    <div> 
+    <div className='h-100'> 
       <Link href="/home">
         Home
       </Link>
