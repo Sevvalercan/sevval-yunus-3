@@ -24,4 +24,5 @@ const Detay = () => {
   );
 }
 
+
 export default Detay;
