@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 const MyMenu = () => {
   return (
-    <div className='h-100'> 
+    <div className='h-100' >
       <Link href="/home">
         Home
       </Link>
@@ -10,6 +10,7 @@ const MyMenu = () => {
       <Link href="/contact">
         Contact
       </Link>
+      
      
     </div>
   );

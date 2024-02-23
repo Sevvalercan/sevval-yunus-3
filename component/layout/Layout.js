@@ -4,17 +4,17 @@ import { useEffect, useState } from "react";
 var Data = [
   {
     id: 1,
-    label: "Anasayfa",
+    label: "Giriş Bölümü",
     link: "/",
   },
   {
     id: 2,
-    label: "Home",
+    label: "Anasayfa",
     link: "/home",
   },
   {
     id: 3,
-    label: "Contact",
+    label: "İletişim",
     link: "/contact",
   },
 ];
