@@ -11,10 +11,10 @@ export default function Nbar({ data }) {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
             {data.map((item) => (
-             
-              <Nav.Link href={item.link}>{item.label}</Nav.Link>
-           ))}
-            
+              <Nav.Link key={item.id} href={item.link}>
+                {item.label}
+              </Nav.Link>
+            ))}
           </Nav>
         </Navbar.Collapse>
       </Navbar>
