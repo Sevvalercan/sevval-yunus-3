@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 
 export default function DetailPage() {
-  const [post, setPosts] = useState([]);
+  const [photo, setPhoto] = useState([]);
   const router = useRouter();
   const { id } = router.query;
 
@@ -20,8 +20,8 @@ export default function DetailPage() {
       .get(`https://jsonplaceholder.typicode.com/photos/${id}`)
       .then((response) => {
         console.log(response);
-        const firstThreePosts = response.data;
-        setPosts(firstThreePosts);
+        const firstThreePhotos = response.data;
+        setPhoto(firstThreePhotos);
       })
       .catch((error) => {
         console.error("Error fetching data:", error);
@@ -33,11 +33,11 @@ export default function DetailPage() {
       className="h-100 d-flex flex-column justify-content-between"
       style={{ minHeight: "80vh" }}
     >
-      {post ? (
+      {photo ? (
         <div>
-          <img src={post.url} alt={post.title} style={{ maxWidth: "30%" }} />
-          <h2>{post.title}</h2>
-          <p>{post.body}</p>
+          <img src={photo.url} alt={photo.title} style={{ maxWidth: "30%" }} />
+          <h2>{photo.title}</h2>
+          <p>{photo.body}</p>
         </div>
       ) : (
         <p>Loading...</p>

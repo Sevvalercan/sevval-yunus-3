@@ -17,6 +17,16 @@ var Data = [
     label: "İletişim",
     link: "/contact",
   },
+  {
+    id: 4,
+    label: "Photos",
+    link: "/photos",
+  },
+  {
+    id: 5,
+    label: "About",
+    link: "/about",
+  },
 ];
 
 const Layout = ({ children }) => {

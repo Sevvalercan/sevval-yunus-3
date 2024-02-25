@@ -8,7 +8,7 @@ import { Button } from 'react-bootstrap';
 export default function CardComponent() {
   const [posts, setPosts] = useState([]);
 
-  useEffect(() => {
+  useEffect(() => { 
     
     axios.get('https://jsonplaceholder.typicode.com/posts')
       .then((response) => {

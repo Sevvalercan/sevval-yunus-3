@@ -8,7 +8,7 @@ export default function MyHome() {
   return (
     <div
       className="d-flex justify-content-center align-items-center"
-      style={{ height: "180vh" }}
+      style={{ height: "80vh" }}
     >
       <GridComplexExample />
     </div>
@@ -19,12 +19,10 @@ function GridComplexExample() {
   return (
     <Form className="mb-2 my-component" style={{ maxWidth: "400px" }}>
       <Row className="mb-2">
-       
-
         <Form.Group as={Col} controlId="formGridPassword">
           <Form.Label>Ad Soyad</Form.Label>
           <Form.Control type="text" placeholder="" />
-        </Form.Group> 
+        </Form.Group>
         <Form.Group as={Col} controlId="formGridEmail">
           <Form.Label>E-posta</Form.Label>
           <Form.Control type="email" placeholder="" />
