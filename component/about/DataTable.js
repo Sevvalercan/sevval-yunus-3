@@ -9,7 +9,7 @@ export default function DataTable() {
       setData(res.data);
     });
   }, []);
-  console.log(process.env.REACT_APP_BASE_URL);
+  console.log(process.env.authAPIkey);
 
   return (
     <div className="d-flex justify-content-center" style={{ height: "80vh" }}>
